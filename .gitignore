@@ -1,0 +1,6 @@
+server/target
+e2e/cypress/screenshots
+node_modules
+yarn-error.log
+
+.elm-stuff
