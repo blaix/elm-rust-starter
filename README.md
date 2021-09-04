@@ -20,7 +20,8 @@ This is by choice to keep things simple and is plenty fast enough.
 or to automatically build/restart server on file changes:
 
 - Pre-req: `cargo install cargo-watch`
-- Run `make watch`
+- Run `make watch` to rebuild/restart server on file change
+- or `make watch.test` to rebuild/rerun tests on file change
 
 **Tests**
 

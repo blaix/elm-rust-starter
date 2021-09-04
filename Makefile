@@ -36,6 +36,8 @@ serve: all
 # Ignoring yarn.lock to avoid double runs when it gets touched on client build.
 watch:
 	cargo watch --why -C server -w .. -i yarn.lock -s "$(MAKE) -C .. serve"
+watch.test:
+	cargo watch --why -C server -w .. -i yarn.lock -s "$(MAKE) -C .. test"
 
 test: e2e/yarn.lock
 	cd e2e && yarn e2e:run
